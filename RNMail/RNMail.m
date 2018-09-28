@@ -120,6 +120,8 @@ RCT_EXPORT_METHOD(mail:(NSDictionary *)options
                 mimeType = @"audio/flac";
             } else if ([attachmentType isEqualToString:@"ogg"]) {
                 mimeType = @"audio/ogg";
+            } else if ([attachmentType isEqualToString:@"tcx"]) {
+                mimeType = @"application/vnd.garmin.tcx+xml";
             } else if ([attachmentType isEqualToString:@"xls"]) {
                 mimeType = @"application/vnd.ms-excel";     
             }
